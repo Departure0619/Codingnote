@@ -1,0 +1,34 @@
+# Local runtime, secrets, personal records, authorization, evidence and caches
+.env
+.env.*
+!.env.example
+.venv/
+.local/
+data/
+output/
+backups/
+logs/
+*.log
+*.sqlite*
+*.db
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+node_modules/
+.pytest_cache/
+.playwright*/
+ROUND8_RAW_MODEL_RESULTS/
+*.zip
+
+# Editor, local tooling and build artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+build/
+dist/
+*.egg-info/
+*.p12
+*.pfx
+*.dump

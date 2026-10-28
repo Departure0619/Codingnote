@@ -1,0 +1,11 @@
+{
+  "verified_on": "2026-10-27",
+  "documentation": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "base_url": "https://api.deepseek.com",
+  "currency": "USD",
+  "pricing_policy": "conservative_peak_rates_per_million_tokens; provider invoice is authoritative",
+  "models": {
+    "deepseek-flash": {"input_hit": 0.006, "input_miss": 0.3, "output": 1.2},
+    "deepseek-v4-pro": {"input_hit": 0.044, "input_miss": 1.32, "output": 3.96}
+  }
+}

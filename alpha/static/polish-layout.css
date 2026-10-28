@@ -1,0 +1,26 @@
+/* Keep Round 10 visual language, with clear import priority and useful form width. */
+.page-heading .button.polish-import-action{min-height:46px;padding:11px 20px;gap:10px;font-size:14px;font-weight:600;white-space:nowrap}
+.polish-import-action .nav-icon{width:19px;height:19px;stroke-width:1.8}
+.polish-settings-layout{display:grid;grid-template-columns:minmax(0,1fr) 248px;gap:28px;align-items:start;max-width:1360px}
+.polish-settings-layout>.settings-grid.final-settings{width:100%;max-width:none;min-width:0}
+.polish-settings-context{position:sticky;top:86px;border-left:1px solid var(--border);padding:8px 0 8px 24px;color:var(--muted);font-size:13px;line-height:1.9;min-width:0}
+.polish-settings-context h2{color:var(--text);font-size:16px;margin-bottom:15px}
+.polish-settings-context>p{margin-bottom:17px;overflow-wrap:anywhere}
+.polish-settings-context .eyebrow{font-size:11px;margin-bottom:7px}
+.polish-settings-context .polish-current-mode{font-size:19px;font-weight:600;line-height:1.5;color:var(--primary);margin-bottom:18px}
+.polish-settings-save{border-top:1px solid var(--border);padding-top:16px;font-size:12px;margin-bottom:0!important}
+.polish-settings-save.is-dirty{color:var(--warning)}
+.settings-grid.final-settings .preference-group .field{display:flex;flex-direction:column;align-items:stretch;gap:8px;padding:8px 0}
+.settings-grid.final-settings .preference-group .field>span{font-size:13px;line-height:1.7;font-weight:500;min-height:22px}
+.settings-grid.final-settings .preference-group select{width:100%;font-size:13px;min-height:40px}
+.settings-grid.final-settings .preference-group{gap:0 18px;padding-bottom:16px}
+.settings-grid.final-settings .preset-row{gap:10px}
+.settings-grid.final-settings .preset{min-height:46px;font-size:14px;font-weight:500}
+.settings-grid.final-settings .preset.selected{box-shadow:inset 0 -2px var(--primary)}
+.settings-grid.final-settings #global-preferences{padding:24px}
+.settings-grid.final-settings .preference-save{gap:14px;padding-top:18px}
+.settings-grid.final-settings .preference-save .actions{margin:0}
+.review-knowledge{display:flex;flex-wrap:wrap;gap:5px;margin:7px 0}
+@media(max-width:1250px){.polish-settings-layout{grid-template-columns:minmax(0,1fr) 220px;gap:22px}.polish-settings-context{padding-left:20px}.settings-grid.final-settings .preference-group{gap:0 14px}.settings-grid.final-settings #global-preferences{padding:22px}}
+@media(max-width:1100px){.polish-settings-layout{grid-template-columns:1fr;gap:0}.polish-settings-context{position:static;border-left:0;border-top:1px solid var(--border);padding:20px 4px 0;margin-top:5px;max-width:80ch}.polish-settings-context>p{margin-bottom:12px}.settings-grid.final-settings .preference-group{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.page-heading .button.polish-import-action{min-height:46px;padding:11px 17px;font-size:14px}.settings-grid.final-settings .preference-group{grid-template-columns:1fr;gap:2px}.settings-grid.final-settings .preference-group select{font-size:16px;min-height:44px}.settings-grid.final-settings .preference-group .field>span{font-size:14px}.settings-grid.final-settings #global-preferences{padding:20px}.settings-grid.final-settings .preset-row{gap:6px}.settings-grid.final-settings .preset{font-size:13px;min-height:46px}.polish-settings-context{padding:19px 2px 0}.polish-settings-context .polish-current-mode{font-size:17px}.settings-grid.final-settings .preference-save .actions{flex-wrap:wrap}}

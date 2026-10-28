@@ -1,0 +1,7 @@
+# Optional CPU-only local OCR. Project-local install (no admin/global changes):
+# python -m pip install --target .local/ocr --only-binary=:all: -r requirements-ocr.txt
+rapidocr-onnxruntime==1.4.4
+onnxruntime==1.31.0
+opencv-python==5.0.0.93
+numpy==2.5.4
+Pillow==13.0.0

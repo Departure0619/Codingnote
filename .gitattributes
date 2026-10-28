@@ -1,0 +1,2 @@
+# Frozen SHA-256 inputs must retain exact bytes on every checkout.
+* -text

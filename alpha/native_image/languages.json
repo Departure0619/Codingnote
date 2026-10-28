@@ -1,0 +1,148 @@
+{
+  "c": {
+    "display_name": "C17",
+    "runtime_version": "GCC 14.2.0",
+    "filename": "main.c",
+    "artifact": true,
+    "compile_profile": "native",
+    "compile_command": [
+      "gcc",
+      "-std=c17",
+      "-O0",
+      "-pipe",
+      "/tmp/main.c",
+      "-o",
+      "/tmp/program",
+      "-lm"
+    ],
+    "run_command": [
+      "sealed-memfd"
+    ],
+    "version_command": [
+      "gcc",
+      "--version"
+    ],
+    "entry_note": "单文件，main 入口"
+  },
+  "cpp": {
+    "display_name": "C++17",
+    "runtime_version": "G++ 14.2.0",
+    "filename": "main.cpp",
+    "artifact": true,
+    "compile_profile": "native",
+    "compile_command": [
+      "g++",
+      "-std=c++17",
+      "-O0",
+      "-pipe",
+      "/tmp/main.cpp",
+      "-o",
+      "/tmp/program"
+    ],
+    "run_command": [
+      "sealed-memfd"
+    ],
+    "version_command": [
+      "g++",
+      "--version"
+    ],
+    "entry_note": "单文件，main 入口"
+  },
+  "python": {
+    "display_name": "Python 3.12",
+    "runtime_version": "3.12 (patch recorded in acceptance)",
+    "filename": "main.py",
+    "artifact": false,
+    "compile_profile": "run",
+    "compile_command": [
+      "python",
+      "-I",
+      "-S",
+      "-u",
+      "-c",
+      "from pathlib import Path; compile(Path('/tmp/main.py').read_bytes(), '/tmp/main.py', 'exec')"
+    ],
+    "run_command": [
+      "python",
+      "-I",
+      "-S",
+      "-u",
+      "/tmp/main.py"
+    ],
+    "version_command": [
+      "python",
+      "--version"
+    ],
+    "entry_note": "单文件，UTF-8 标准输入输出"
+  },
+  "java": {
+    "display_name": "Java 17",
+    "runtime_version": "17.0.18+8",
+    "filename": "<entry>.java",
+    "artifact": true,
+    "compile_profile": "native",
+    "compile_command": [
+      "/opt/java/openjdk/bin/javac",
+      "-J-Xms8m",
+      "-J-Xmx128m",
+      "-J-XX:MaxMetaspaceSize=96m",
+      "-J-XX:+UseSerialGC",
+      "-J-XX:ActiveProcessorCount=1",
+      "-J-XX:-UsePerfData",
+      "-proc:none",
+      "-encoding",
+      "UTF-8",
+      "--release",
+      "17",
+      "-d",
+      "/tmp/classes"
+    ],
+    "run_command": [
+      "/opt/java/openjdk/bin/java",
+      "-Xms8m",
+      "-Xmx48m",
+      "-Xss256k",
+      "-XX:MaxMetaspaceSize=32m",
+      "-XX:ReservedCodeCacheSize=16m",
+      "-XX:+UseSerialGC",
+      "-XX:ActiveProcessorCount=1",
+      "-XX:-UsePerfData",
+      "-XX:ErrorFile=/tmp/java_error.log",
+      "-Dfile.encoding=UTF-8",
+      "-cp",
+      "/tmp/classes"
+    ],
+    "version_command": [
+      "/opt/java/openjdk/bin/java",
+      "-version"
+    ],
+    "entry_note": "单个源文件，无 package；优先 Main，否则唯一 public 类型或唯一顶层类。入口类名须使用 ASCII 标识符；需 public static void main(String[] args)；所有生成类文件名须为 ASCII，最多128个类，产物传输上限1MiB。"
+  },
+  "javascript": {
+    "display_name": "JavaScript (Node.js)",
+    "runtime_version": "22.22.0",
+    "filename": "main.js",
+    "artifact": false,
+    "compile_profile": "run",
+    "compile_command": [
+      "node",
+      "--max-old-space-size=48",
+      "--max-semi-space-size=4",
+      "--stack-size=512",
+      "--check",
+      "/tmp/main.js"
+    ],
+    "run_command": [
+      "node",
+      "--max-old-space-size=48",
+      "--max-semi-space-size=4",
+      "--stack-size=512",
+      "/tmp/main.js"
+    ],
+    "version_command": [
+      "node",
+      "--version"
+    ],
+    "entry_note": "单文件 CommonJS；可用内置模块，未安装 npm 依赖。先语法检查，再独立运行"
+  }
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>编程学习工作台 · Alpha</title>
+  <meta name="description" content="从练习到回顾，保存题目、代码版本、执行证据与自己的思考。">
+  <script src="/theme.js"></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/integration.css">
+  <link rel="stylesheet" href="/final-system.css">
+  <link rel="stylesheet" href="/final-library.css">
+  <link rel="stylesheet" href="/final-workspace.css">
+  <link rel="stylesheet" href="/polish-knowledge.css">
+  <link rel="stylesheet" href="/polish-layout.css">
+  <link rel="stylesheet" href="/polish-import.css">
+  <link rel="stylesheet" href="/copy-budget-ai.css">
+  <script src="/polish-knowledge.js" defer></script>
+  <script src="/polish-layout.js" defer></script>
+  <script src="/polish-import.js" defer></script>
+  <script src="/copy-budget-bank.js" defer></script>
+  <script src="/integration.js" defer></script>
+  <script src="/round67.js" defer></script>
+  <script src="/copy-budget-ai.js" defer></script>
+  <script src="/final-pages.js" defer></script>
+  <script src="/final-workspace.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">跳至正文</a>
+  <aside class="app-sidebar" aria-label="学习空间">
+    <a class="brand" href="#/" aria-label="编程学习工作台首页"><span class="brand-mark" aria-hidden="true">aic<span>·</span></span><span class="brand-copy">编程学习工作台<small>LEARNING STUDIO <span class="alpha-label">Alpha</span></small></span></a>
+    <nav class="main-navigation" aria-label="主导航">
+      <p class="nav-caption">我的学习</p>
+      <a href="#/" data-nav="home" data-icon="home">学习首页</a>
+      <a href="#/bank" data-nav="bank" data-icon="book">题库浏览</a>
+      <a href="#/library" data-nav="library" data-icon="library">错题库</a>
+      <a href="#/workspace" data-nav="workspace" data-icon="code">编程工作区</a>
+      <a href="#/reviews" data-nav="reviews" data-icon="review">待复习</a>
+      <p class="nav-caption">学习资源</p>
+      <a href="#/history" data-nav="history" data-icon="clock">学习记录</a>
+      <a href="#/import" data-nav="import" data-icon="import">导入题目</a>
+      <a href="#/settings" data-nav="settings" data-icon="settings">工作台设置</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="local-symbol" aria-hidden="true">&gt;_</span><div>本地学习空间<small>记录思路，回到问题。</small></div></div>
+  </aside>
+  <header class="app-header"><button id="navigation-toggle" class="icon-button" type="button" aria-label="展开导航" aria-expanded="false" aria-controls="mobile-navigation">☰</button><nav class="breadcrumb" aria-label="当前位置"><a href="#/">我的学习</a><span aria-hidden="true">›</span><span id="current-page-label">学习首页</span></nav><div class="header-tools"><span class="local-status"><i aria-hidden="true"></i>本机保存</span><button type="button" data-theme-toggle>深色外观</button></div></header>
+  <dialog id="mobile-navigation" aria-label="主导航"><div class="row"><strong>我的学习空间</strong><button type="button" id="close-navigation" aria-label="关闭导航">关闭</button></div><nav class="mobile-navigation-links" aria-label="移动端主导航"></nav></dialog>
+  <div id="notice" role="status" aria-live="polite" hidden></div>
+  <main id="app" tabindex="-1"><p class="empty">正在打开学习工作台…</p></main>
+  <footer><span>编程学习工作台 <span class="muted">/ Alpha</span></span><span>本机保存 · 让每次修改都有迹可循</span></footer>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title" aria-describedby="confirm-description">
+    <form method="dialog"><h2 id="confirm-title">离开当前页面？</h2><p id="confirm-description">当前页面有未保存内容。离开后，这些修改将丢失。</p><div class="actions"><button value="cancel" autofocus>继续编辑</button><button class="danger" value="confirm">放弃修改并离开</button></div></form>
+  </dialog>
+</body>
+</html>

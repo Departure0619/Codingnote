@@ -1,0 +1,7 @@
+*
+!Dockerfile
+!supervisor.py
+!managed.py
+!languages.json
+
+!NODE_LICENSE
