@@ -121,7 +121,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -X utf8 -m alpha --port 8039 --data-dir data/public-demo --runtime-dir data/public-runtime --no-browser
 ```
 
-打开 **http://127.0.0.1:8039/**，点击“导入题目”，填写自己编写或有权使用的内容并保存进入工作区。先保存代码版本，再运行、记录原因与错题笔记；在前台终端按 `Ctrl+C` 停止服务。
+打开 [本机工作台](http://127.0.0.1:8039/)，点击“导入题目”，填写自己编写或有权使用的内容并保存进入工作区。先保存代码版本，再运行、记录原因与错题笔记；在前台终端按 `Ctrl+C` 停止服务。
 
 运行代码前，需要在自己的机器完成 Docker 构建与五语言验收，不复制其他环境的验收收据。[完整安装指南](docs/QUICK_START.md) 说明了 Docker 设置、第一道题、停止服务、备份恢复与常见问题。
 
